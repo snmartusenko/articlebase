@@ -6,7 +6,12 @@
  */
 
 module.exports = {
-  
+  list: async function (req, res) {
+    let articles = await Articles.find()
+      .catch(error => res.view('500'));
+
+    return res.view('articles/list', {articles: articles});
+  }
 
 };
 

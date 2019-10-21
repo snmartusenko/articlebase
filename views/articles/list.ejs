@@ -1,0 +1,20 @@
+<h1 class="dysplay-4">Articles</h1>
+<table class="table table-stripe">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for(let i = 0; i < articles.length; i++) { %>
+        <tr>
+            <td><%= articles[i].id %></td>
+            <td><%= articles[i].title %></td>
+            <td></td>
+        </tr>
+    <% } %>
+    </tbody>
+</table>
+
