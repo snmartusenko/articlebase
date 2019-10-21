@@ -33,5 +33,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'POST /articles/delete/:id': {action: 'articles/delete'},
 
 };
