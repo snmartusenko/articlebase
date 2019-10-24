@@ -33,6 +33,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'GET /articles/edit/:id': {action: 'articles/edit'},
   'POST /articles/delete/:id': {action: 'articles/delete'},
+  'POST /articles/update/:id': {action: 'articles/update'},
 
 };
